@@ -31,6 +31,7 @@ Website: https://cssgradient.io/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: lightgray 1px solid;
 }
 
 body {
@@ -57,11 +58,22 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: var(--color-primary);
+    color: var(--color-white);
     text-decoration: underline;
 }
 
 /**** CLASSES ****/
+
+.flex {
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
 
 .subtitle {
     font-size: var(--fontsize-body-l);
@@ -76,4 +88,8 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+}
+
+.dark-bg {
+    background-color: var(--color-gray);
 }
