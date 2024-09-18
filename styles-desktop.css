@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/*
+background: rgb(99,102,241);
+background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%); 
+Website: https://cssgradient.io/
+*/
+
+:root {
+    --fontsize-default: 16px;
+    --fontsize-heading-l: 3.5rem;
+    --fontsize-body-l: 1.125rem;
+
+    --fontweight-regular: 400;
+    --fontweight-extrabold: 800;
+
+    --color-primary: #6366F1;
+    --color-gray: #F3F6FF;
+    --color-white: #FFF;
+    --color-success: #22C55E;
+    --color-error: #EF4444;
+
+    --gradient-start: #6366F1;
+    --gradient-middle: #8B5CF6;
+    --gradient-end: #D946EF;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: var(--fontweight-regular);
+    font-size: var(--fontsize-default);
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+h1, 
+h2, 
+h3 {
+    font-weight: var(--fontweight-extrabold);
+}
+
+h1 {
+    font-size: var(--fontsize-heading-l);
+}
+
+a, 
+a:visited {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/**** CLASSES ****/
+
+.subtitle {
+    font-size: var(--fontsize-body-l);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 8px;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
