@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('toggle-switch.css');
 
 /*
 background: rgb(99,102,241);
@@ -15,10 +16,12 @@ Website: https://cssgradient.io/
     --fontweight-extrabold: 800;
 
     --color-primary: #6366F1;
-    --color-gray: #F3F6FF;
+    --color-gray-100: #F3F6FF;
+    --color-gray-600: #9397AD;
     --color-white: #FFF;
     --color-success: #22C55E;
     --color-error: #EF4444;
+ 
 
     --gradient-start: #6366F1;
     --gradient-middle: #8B5CF6;
@@ -31,7 +34,11 @@ Website: https://cssgradient.io/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: lightgray 1px solid;
+  border: 1px dashed lightgray;
+}
+
+html {
+    font-size: var(--fontsize-default);
 }
 
 body {
@@ -73,6 +80,7 @@ a:hover {
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .subtitle {
