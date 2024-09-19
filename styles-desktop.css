@@ -21,12 +21,11 @@ Website: https://cssgradient.io/
     --color-white: #FFF;
     --color-success: #22C55E;
     --color-error: #EF4444;
- 
 
     --gradient-start: #6366F1;
     --gradient-middle: #8B5CF6;
     --gradient-end: #D946EF;
-  }
+}
 
 *,
 *::before,
@@ -38,10 +37,6 @@ Website: https://cssgradient.io/
 }
 
 html {
-    font-size: var(--fontsize-default);
-}
-
-body {
     font-family: 'Manrope', sans-serif;
     font-weight: var(--fontweight-regular);
     font-size: var(--fontsize-default);
@@ -49,7 +44,7 @@ body {
     font-optical-sizing: auto;
 }
 
-h1, 
+/* h1, 
 h2, 
 h3 {
     font-weight: var(--fontweight-extrabold);
@@ -58,29 +53,25 @@ h3 {
 h1 {
     font-size: var(--fontsize-heading-l);
 }
-
-a, 
+ */
+/* a, 
 a:visited {
-    color: var(--color-primary);
+    color: var(--color-white);
     text-decoration: none;
 }
 a:hover {
-    color: var(--color-white);
     text-decoration: underline;
-}
+} */
 
 /**** CLASSES ****/
 
-.flex {
-    width: 1920px;
-    display: flex;
+.wrapper {
+    display: grid;
     justify-content: center;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header, main, footer {
+    width: 1296px;
 }
 
 .subtitle {
@@ -89,15 +80,8 @@ a:hover {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: var(--color-white);
-    border-radius: 8px;
-    padding: 12px 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
 }
 
 .dark-bg {
-    background-color: var(--color-gray);
+    background-color: var(--color-gray-100);
 }
