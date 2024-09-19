@@ -11,8 +11,10 @@ Website: https://cssgradient.io/
     --fontsize-default: 16px;
     --fontsize-heading-l: 3.5rem;
     --fontsize-body-l: 1.125rem;
+    --fontsize-button-s: .875rem; /* 14px */
 
     --fontweight-regular: 400;
+    --fontweight-semibold: 500;
     --fontweight-extrabold: 800;
 
     --color-primary: #6366F1;
@@ -25,6 +27,8 @@ Website: https://cssgradient.io/
     --gradient-start: #6366F1;
     --gradient-middle: #8B5CF6;
     --gradient-end: #D946EF;
+    
+    --width: 1296px;
 }
 
 *,
@@ -33,7 +37,7 @@ Website: https://cssgradient.io/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px dashed lightgray;
+  border: 0px dashed lightgray; /* REMOVE WHEN DONE */
 }
 
 html {
@@ -44,44 +48,119 @@ html {
     font-optical-sizing: auto;
 }
 
-/* h1, 
+header, main, footer {
+    width: var(--width);
+}
+
+
+/*//////////////////////////////
+
+/// Headline styles
+
+////////////////////////////*/
+
+h1, 
 h2, 
 h3 {
     font-weight: var(--fontweight-extrabold);
 }
-
 h1 {
     font-size: var(--fontsize-heading-l);
 }
- */
-/* a, 
+
+
+/*//////////////////////////////
+
+/// Anchors
+
+////////////////////////////*/
+
+a, 
 a:visited {
-    color: var(--color-white);
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
-} */
+}
 
-/**** CLASSES ****/
+
+/*//////////////////////////////
+
+/// Wrapper and Container
+
+////////////////////////////*/
 
 .wrapper {
     display: grid;
     justify-content: center;
 }
-
-header, main, footer {
-    width: 1296px;
+.container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
+
 
 .subtitle {
     font-size: var(--fontsize-body-l);
 }
 
-.btn-primary {
+
+/*//////////////////////////////
+
+/// Buttons
+
+////////////////////////////*/
+
+.button {
     background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: var(--fontsize-button-s);
+    font-weight: var(--fontweight-semibold);
+    align-content: center;
+    
+}
+.button__signin {
+    width: 140px;
+    height: 36px;
+    background-image: url('assets/avatar.svg');
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+    text-align: right;
+    border-radius: 4px;
+    padding-right: 20px;
+}
+.button__learn-more {
+    width: 156px;
+    height: 44px;
+    display: block;
+    background-image: url('assets/arrow-right-white.svg');
+    background-repeat: no-repeat;
+    background-position-x: 116px;
+    background-position-y: 17px;
+    text-align: right;
+    border-radius: 6px;
+    padding-right: 56px;
 }
 
-.dark-bg {
+.bg__dark {
     background-color: var(--color-gray-100);
+}
+
+
+/*//////////////////////////////
+
+/// Clients logotypes in the App Features section
+
+////////////////////////////*/
+
+.client__logo img {
+    width: 196px;
+    height: 100px;
+    border: 1px solid var(--color-gray-100);
+    border-radius: 8px;
+}
+.client__logo img:hover {
+    box-shadow: 1px 1px 10px var(--color-gray-100);
 }

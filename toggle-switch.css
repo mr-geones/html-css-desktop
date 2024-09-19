@@ -14,7 +14,7 @@ input[type=checkbox]{
 }
 
 #toggle label {
-	cursor: pointer;
+	cursor: not-allowed;
 	text-indent: -9999px;
 	width: 46px;
 	height: 24px;
@@ -33,5 +33,5 @@ input[type=checkbox]{
 	height: 20px;
 	background: #fff;
 	border-radius: 90px;
-	transition: 0.3s;
+	transition: 0.3s; /* NOT IN USE */
 }
