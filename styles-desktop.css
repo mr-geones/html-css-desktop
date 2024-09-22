@@ -65,7 +65,7 @@ Website: https://cssgradient.io/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1rem dashed lightgray; /* REMOVE WHEN DONE */
+  border: 0rem dashed lightgray; /* REMOVE WHEN DONE */
 }
 
 /*-----------------------------------------------------------------------
@@ -82,42 +82,64 @@ html {
 }
 body {
     font-size: var(--fontsize-body-m);
+    width: 1920rem;
 }
-
-
-/*
-header, main, footer {
-    width: var(--width-desktop);
-}
-*/
 
 /*-----------------------------------------------------------------------
-/// Section heights
+/// Wrappers and Containers
 -----------------------------------------------------------------------*/
 
-/*
-.height-xxl {
-    height: var(--height-xxl);
+/* .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1296rem 1fr;
 }
-.height-xl {
-    height: var(--height-xl);
+header, main, footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
-.height-l {
-    height: var(--height-l);
+ */
+
+
+
+/*-----------------------------------------------------------------------
+/// Header, Main, Footer, Section and related wrappers and containers
+-----------------------------------------------------------------------*/
+
+header div, main section div, footer div {
+    margin: auto;
+    width: var(--width-desktop);
 }
-.height-m {
-    height: var(--height-m);
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76rem;
 }
-.height-s {
-    height: var(--height-s);
+.navbar {
+    display: flex;
+    align-items: center;
 }
-.height-xs {
-    height: var(--height-xs);
+.navbar img {
+    margin-right: 48rem;
 }
-.height-xxs {
-    height: var(--height-xxs);
+nav {
+    display: inline;
 }
-*/
+main section:first-of-type {
+    background-image: url('assets/main-bg.webp');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+#hero div div {
+    width: 526rem;
+    margin-left: 0;
+}
+#hero div h1 {
+    line-height: 130%;
+    margin-bottom: 27rem;
+    padding-top: 112rem;
+}
 
 /*-----------------------------------------------------------------------
 /// Headlines
@@ -135,6 +157,11 @@ h1 {
 h2 {
     font-size: var(--fontsize-heading-l);
 }
+.subtitle {
+    font-size: var(--fontsize-body-l);
+    margin-bottom: 54rem;
+}
+
 /*-----------------------------------------------------------------------
 /// Anchors
 -----------------------------------------------------------------------*/
@@ -152,28 +179,27 @@ nav a:visited {
 }
 
 /*-----------------------------------------------------------------------
-/// Wrappers and Containers
+/// Styles for the button Sign in/up, Learn more and Discover more
 -----------------------------------------------------------------------*/
-
-/*
-.wrapper {
-    display: grid;
-    justify-content: center;
+section span a {
+    color: var(--color-gray-700);
+    font-size: var(--fontsize-body-s);
+    display: block;
+    width: 167rem;
+    height: 67rem;
+    align-content: center;
+    text-align: right;
+    padding-left: 60rem;
+    background-image: url('assets/arrow-down-black-w-circle-bg.svg');
+    background-repeat: no-repeat;
+    background-position-x:-12rem;
+    background-position-y:4rem;
+    margin-top: 205rem;
+    margin-bottom: 55rem;
 }
-.container {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+section span a:visited {
+   color: var(--color-gray-700);
 }
-*/
-
-.subtitle {
-    font-size: var(--fontsize-body-l);
-}
-
-/*-----------------------------------------------------------------------
-/// Buttons
------------------------------------------------------------------------*/
 
 .button {
     background-color: var(--color-primary);
@@ -259,11 +285,10 @@ div #toggle {
     border-radius: 8rem;
     text-indent: -9999px;
 }
-
 .app__appstore {
     background-image: url('assets/appstore-light.svg');
+    margin-right: 24rem;
 }
-
 .app__googleplay {
     background-image: url('assets/googleplay-light.svg');
 }
