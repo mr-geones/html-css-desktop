@@ -7,11 +7,9 @@ background: radial-gradient(circle, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.0
 Website: https://cssgradient.io/
 */
 
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Variables
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 :root {
     --fontsize-default: 1px;
@@ -30,12 +28,18 @@ Website: https://cssgradient.io/
     --fontweight-semibold: 500;
     --fontweight-extrabold: 800;
 
-    --color-primary: #6366F1;
-    --color-gray-100: #F3F6FF;
-    --color-gray-600: #9397AD;
+    --color-black: #000;
     --color-white: #FFF;
     --color-success: #22C55E;
     --color-error: #EF4444;
+    --color-warning: #EF9A44;
+    --color-info: #4C82F7;
+    --color-primary: #6366F1;
+
+    --color-gray-900: #0B0F19;
+    --color-gray-700: #565973;
+    --color-gray-600: #9397AD;
+    --color-gray-100: #F3F6FF;
 
     --gradient-start: #6366F1;
     --gradient-middle: #8B5CF6;
@@ -51,12 +55,9 @@ Website: https://cssgradient.io/
     --height-xxs: 76rem;
 }
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Reset
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 *,
 *::before,
@@ -67,12 +68,9 @@ Website: https://cssgradient.io/
   border: 1rem dashed lightgray; /* REMOVE WHEN DONE */
 }
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Main containers
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 html {
     font-family: 'Manrope', sans-serif;
@@ -80,22 +78,24 @@ html {
     font-size: var(--fontsize-default);
     font-style: normal;
     font-optical-sizing: auto;
+    color: var(--color-gray-700);
 }
 body {
     font-size: var(--fontsize-body-m);
 }
 
+
+/*
 header, main, footer {
     width: var(--width-desktop);
 }
+*/
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Section heights
+-----------------------------------------------------------------------*/
 
-/////////////////////////////////////////////////////////////////////////*/
-
+/*
 .height-xxl {
     height: var(--height-xxl);
 }
@@ -117,29 +117,25 @@ header, main, footer {
 .height-xxs {
     height: var(--height-xxs);
 }
+*/
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Headlines
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 h1, 
 h2, 
 h3 {
+    color: var(--color-gray-900);
     font-weight: var(--fontweight-extrabold);
 }
 h1 {
     font-size: var(--fontsize-heading-l);
 }
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Anchors
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 a,
 a:visited {
@@ -153,13 +149,11 @@ nav a:visited {
     color: black;
 }
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Wrappers and Containers
+-----------------------------------------------------------------------*/
 
-/////////////////////////////////////////////////////////////////////////*/
-
+/*
 .wrapper {
     display: grid;
     justify-content: center;
@@ -169,18 +163,15 @@ nav a:visited {
     justify-content:space-between;
     align-items: center;
 }
-
+*/
 
 .subtitle {
     font-size: var(--fontsize-body-l);
 }
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Buttons
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 .button {
     background-color: var(--color-primary);
@@ -191,6 +182,7 @@ nav a:visited {
     
 }
 .button__signin {
+    display: inline-block;
     width: 140rem;
     height: 36rem;
     background-image: url('assets/avatar.svg');
@@ -202,9 +194,9 @@ nav a:visited {
     padding-right: 20rem;
 }
 .button__learn-more {
+    display: block;
     width: 156rem;
     height: 44rem;
-    display: block;
     background-image: url('assets/arrow-right-white.svg');
     background-repeat: no-repeat;
     background-position-x: 116rem;
@@ -214,23 +206,17 @@ nav a:visited {
     padding-right: 56rem;
 }
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Backgrounds
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 .bg__dark {
     background-color: var(--color-gray-100);
 }
 
-
-/*///////////////////////////////////////////////////////////////////////////
-
-/// Images and Logotypes
-
-/////////////////////////////////////////////////////////////////////////*/
+/*-----------------------------------------------------------------------
+/// Styles for the logotypes of the clients
+-----------------------------------------------------------------------*/
 
 .client__logo img {
     width: 196rem;
@@ -242,11 +228,9 @@ nav a:visited {
     box-shadow: 1rem 1rem 10rem var(--color-gray-100);
 }
 
-/*///////////////////////////////////////////////////////////////////////////
-
+/*-----------------------------------------------------------------------
 /// Elements positioning in <header>
-
-/////////////////////////////////////////////////////////////////////////*/
+-----------------------------------------------------------------------*/
 
 div #logo {
     padding-right: 48rem;
@@ -256,4 +240,65 @@ div #toggle {
 }
 #toggle span {
     padding-right: 17rem;
+}
+
+/*-----------------------------------------------------------------------
+/// Styles for the AppStore and GooglePlay button
+-----------------------------------------------------------------------*/
+
+.app {
+    display: inline-block;
+    background-color: var(--color-black);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    width: 180rem;
+    height: 52rem;
+    border-radius: 8rem;
+    text-indent: -9999px;
+}
+
+.app__appstore {
+    background-image: url('assets/appstore-light.svg');
+}
+
+.app__googleplay {
+    background-image: url('assets/googleplay-light.svg');
+}
+
+/*-----------------------------------------------------------------------
+/// Styles for keynotes under App Features
+-----------------------------------------------------------------------*/
+
+.features {
+    width: 345rem;
+    background-repeat: no-repeat;
+    background-position-x:left;
+    background-position-y:top;
+    padding-left: 84rem;
+}
+.features h3 {
+    font-size: var(--fontsize-heading-xs);
+    padding-bottom: 15rem;
+}
+.features p {
+    font-size: var(--fontsize-body-m);
+}
+.features__payments {
+    background-image: url('assets/icon-card.svg');
+}
+.features__statistics {
+    background-image: url('assets/icon-bars.svg');
+}
+.features__cashback {
+    background-image: url('assets/icon-wallet.svg');
+}
+.features__security {
+    background-image: url('assets/icon-shield.svg');
+}
+.features__support {
+    background-image: url('assets/icon-talk-bubbles.svg');
+}
+.features__standards {
+    background-image: url('assets/icon-smiley.svg');
 }
