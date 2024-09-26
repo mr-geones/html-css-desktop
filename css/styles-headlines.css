@@ -1,0 +1,14 @@
+h1, h2, h3 {
+    color: var(--color-gray-900);
+    font-weight: var(--fontweight-extrabold);
+}
+h1 {
+    font-size: var(--fontsize-heading-xl);
+}
+h2 {
+    font-size: var(--fontsize-heading-l);
+}
+.subtitle {
+    font-size: var(--fontsize-body-l);
+    margin-bottom: 54rem;
+}
