@@ -32,8 +32,9 @@ nav a img {
   align-items: center;
   gap: 32rem;
 }
-.warpper__darkmode {
+.wrapper__darkmode {
   padding-right: 17rem;
+	color: var(--color-gray-700);
 }
 
 /*-----------------------------------------------------------------------
