@@ -4,7 +4,7 @@ header {
 	background-position-x: center;
 	background-position-y: top;
 	display: grid;
-	grid-template-columns: 1fr 1296rem 1fr;
+	grid-template-columns: 1fr var(--width-desktop) 1fr;
 }
 
 #header {
@@ -12,7 +12,7 @@ header {
   grid-template-columns: 1fr auto;
   align-items: center;
   height: 76rem;
-	width: 1296rem;
+	width: var(--width-desktop);
 	grid-column-start: 2;
 	grid-column-end: 3;
 }

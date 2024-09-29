@@ -4,10 +4,10 @@
 	background-position-x: center;
 	background-position-y: bottom;
   display: grid;
-  grid-template-columns: auto 1296rem auto;
+  grid-template-columns: auto var(--width-desktop) auto;
 }
 
-#section-01 .s1 {
+#section-01 .s01 {
   display: grid;
   grid-template-rows: 318rem 58rem 100rem 324rem;
   justify-content: left;
@@ -20,9 +20,9 @@
   grid-column-end: 3;
 }
 
-#section-01 .s1 h1,
-#section-01 .s1 p,
-#section-01 .s1 div {
+#section-01 .s01 h1,
+#section-01 .s01 p,
+#section-01 .s01 div {
   width: 540rem;
 }
 

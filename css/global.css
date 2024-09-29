@@ -65,7 +65,7 @@
 -----------------------------------------------------------------------*/
 
 *{
-    border: 0rem dashed lightgray; /* REMOVE WHEN DONE */
+    border: .5rem dashed lightgray; /* REMOVE WHEN DONE */
 }
 
 html {
