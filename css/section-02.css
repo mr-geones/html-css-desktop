@@ -13,6 +13,8 @@
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
+  height: 684rem;
+  margin-bottom: 112rem;
 }
 
 /*-----------------------------------------------------------------------
@@ -43,6 +45,7 @@
 }
 
 #s02-b > p:first-of-type {
+  color: var(--color-gray-600);
   margin-bottom: 67rem;
 }
 
@@ -55,7 +58,6 @@
   display: grid;
   grid-template-columns: 1fr auto;
   row-gap: 48rem;
-  margin-bottom: 156rem;
 }
 
 
