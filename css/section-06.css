@@ -17,7 +17,6 @@ details {
   box-shadow: 0rem 2rem 3rem 0rem rgb(0 0 0 / 3%);
   border-radius: 8rem;
   min-height: 68rem;
-  max-height: 180rem;
   margin-bottom: 14rem;
   padding-left: 24rem;
   padding-right: 24rem;
@@ -40,6 +39,6 @@ details > div {
   font-size: var(--fontsize-body-s);
   line-height: 160%;
   color: var(--color-gray-700);
-  height: 88rem;
-  background-image: url('../assets/arrow-up-purple.svg');
+  min-height: 88rem;
+  padding-bottom: 20rem;
 }
