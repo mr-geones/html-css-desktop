@@ -43,6 +43,7 @@
   background-repeat: no-repeat;
   background-position-x:left;
   background-position-y:top;
+  height: 48rem;
 }
 .testimonials #client-1 {
   background-image: url('../assets/client-fanny.png');
