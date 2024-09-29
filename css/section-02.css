@@ -26,9 +26,7 @@
   margin-top: 96rem;
   margin-bottom: 113rem;
 }
-.clients img {
-  width: 196rem;
-  height: 100rem;
+.clients > img {
   border: 1rem solid var(--color-gray-100);
   border-radius: 8rem;
 }

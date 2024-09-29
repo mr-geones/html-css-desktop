@@ -1,15 +1,26 @@
+#section-04 {
+  display: grid;
+  grid-template-columns: auto 1076rem auto;
+}
+#section-04 > div:first-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 134rem;
+  margin-bottom: 138rem;
+}
+
 /*-----------------------------------------------------------------------
 /// Styles for Make your money...
 -----------------------------------------------------------------------*/
 
 .container__make_your_money {
-  width: 1076rem;
   height: 500rem;
   padding-right: 665rem;
   background-image: url('../assets/graphic-1.webp');
   background-repeat: no-repeat;
   background-position-x:right;
   background-position-y:center;
+  margin-bottom: 80rem;
 }
 .container__make_your_money h2 {
   font-size: var(--fontsize-heading-m);
@@ -38,7 +49,6 @@
 -----------------------------------------------------------------------*/
 
 .container__receive_payment {
-  width: 1076rem;
   height: 500rem;
   padding-left: 550rem;
   background-image: url('../assets/graphic-2.webp');
