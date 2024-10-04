@@ -33,6 +33,7 @@ details > summary {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
+  cursor: pointer; 
 }
 
 details > div {
