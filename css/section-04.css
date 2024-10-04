@@ -5,6 +5,8 @@
 #section-04 > div:first-of-type {
   grid-column-start: 2;
   grid-column-end: 3;
+  display: grid;
+  align-items: center;
   margin-top: 112rem;
   margin-bottom: 112rem;
 }
@@ -27,6 +29,7 @@
   line-height: 130%;
   margin-top: 97rem;
   margin-bottom: 44rem;
+  width: 400rem;
 }
 .container__make_your_money ul {
   list-style-position: inside;
