@@ -27,7 +27,7 @@
 .container__make_your_money h2 {
   font-size: var(--fontsize-heading-m);
   line-height: 130%;
-  margin-top: 97rem;
+  margin-top: 80rem;
   margin-bottom: 44rem;
   width: 400rem;
 }
@@ -44,7 +44,7 @@
   margin-bottom: 20rem;
 }
 .container__make_your_money a {
-  margin-top: 23rem;
+  margin-top: 40rem;
 }
 
 /*-----------------------------------------------------------------------
@@ -63,7 +63,7 @@
   font-size: var(--fontsize-heading-m);
   line-height: 130%;
   margin-top: 74rem;
-  margin-bottom: 49rem;
+  margin-bottom: 40rem;
 }
 .container__receive_payment div {
   display: flex;
@@ -76,7 +76,7 @@
   background-position-y:top;
   width: 243rem;
   line-height: 160%;
-  padding-top: 83rem;
+  padding-top: 80rem;
 }
 .container__receive_payment p:first-of-type {
   background-image: url('../assets/icon-card.svg');
@@ -85,7 +85,7 @@
   background-image: url('../assets/icon-wallet.svg');
 }
 .container__receive_payment a {
-  margin-top: 47rem;
+  margin-top: 40rem;
 }
 
 /*-----------------------------------------------------------------------
