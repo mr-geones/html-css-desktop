@@ -6,6 +6,7 @@
 @import url('../css/section-04.css');
 @import url('../css/section-05.css');
 @import url('../css/section-06.css');
+@import url('../css/footer.css');
 
 :root {
     --fontsize-default: 1px;
@@ -37,6 +38,8 @@
     --color-gray-800: #33354D;
     --color-gray-700: #565973;
     --color-gray-600: #9397AD;
+    --color-gray-500: #B4B7C9;
+    --color-gray-400: #D4D7E5;
     --color-gray-300: #E2E5F1;
     --color-gray-100: #F3F6FF;
 

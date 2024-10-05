@@ -23,9 +23,14 @@ nav {
   gap: 48rem;
 }
 
-nav a img {
+nav img {
   display: block;
 }
+
+nav a {
+  font-weight: 600;
+}
+
 
 .wrapper__toggle_signin {
   display: flex;
@@ -35,6 +40,7 @@ nav a img {
 .wrapper__darkmode {
   padding-right: 17rem;
 	color: var(--color-gray-700);
+	font-weight: 600;
 }
 
 /*-----------------------------------------------------------------------
