@@ -22,8 +22,7 @@ footer h2 {
   padding-top: 5rem;
   background-image: url('../assets/bell.svg');
   background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: center;
+  background-position: left center;
 }
 
 footer > p {
@@ -60,13 +59,12 @@ footer input:last-of-type {
   cursor: pointer;
 }
 
-
-#subscribe::placeholder {
+footer input:first-of-type::placeholder {
   color: var(--color-gray-500);
   background-image: url('../assets/envelope.svg');
   background-repeat: no-repeat;
-  background-position-x: 18rem;
-  background-position-y: 18.8rem;
+  background-position: left center;
+  background-origin: content-box, padding-box;
 }
 
 .subscribe-button {
